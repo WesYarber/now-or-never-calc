@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- Web page and javascrupt code adapted from the python code mostly with ChatGPT -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maximum Money Yield Calculator</title>
+  <style>
+    /* Dark mode styles */
+    :root {
+      --background-color: #212121;
+      --text-color: #FFFFFF;
+      --form-background-color: #424242;
+      --input-background-color: #303030;
+      --input-text-color: #FFFFFF;
+      --accent-color: #4CAF50;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0; /* Remove body padding */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: var(--form-background-color);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1, h2 {
+      color: var(--text-color);
+      text-align: center;
+      margin: 0; /* Remove margin */
+    }
+
+    /* Left-justify the text within the form */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 10px 0; /* Adjust margin */
+    }
+
+    label {
+      color: var(--text-color);
+      text-align: left;
+      margin: 0; /* Remove margin */
+    }
+
+    input {
+      width: calc(100% - 20px); /* Adjusted width to line up with the button */
+      background-color: var(--input-background-color);
+      color: var(--input-text-color);
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 5px 0; /* Adjust margin */
+    }
+
+    button {
+      background-color: var(--accent-color);
+      color: var(--text-color);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px; /* Add margin to the button */
+      width: 100%; /* Make the button as wide as the input fields */
+    }
+
+    p {
+      margin: 0; /* Remove all margins */
+    }
+
+
+    /* Left-justify the text within the #result div and adjust spacing */
+    #result {
+      margin-top: 10px; /* Adjust margin */
+      text-align: left;
+      white-space: pre-wrap;
+    }
+    footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  footer a {
+  color: #4CAF70; /* You can change the color value to your desired lighter blue */
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Maximum Money Yield Calculator</h1>
+    <form id="resourceForm">
+      <label for="crystal">Crystals:</label>
+      <input type="number" id="crystal" required>
+
+      <label for="demonBottle">Demon Bottles:</label>
+      <input type="number" id="demonBottle" required>
+
+      <label for="tool">Tools:</label>
+      <input type="number" id="tool" required>
+
+      <label for="shell">Shells:</label>
+      <input type="number" id="shell" required>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="result">
+      <!-- The JavaScript code will populate this div with the results -->
+    </div>
+  </div>
+  <footer>
+    <p>Author: Wes Yarber</p>
+    <p><a href="https://www.wesyarber.net">Back to Homepage</a></p>
+  </footer>
+
+  <script src="now_or_never_calc.js"></script>
+</body>
+</html>
