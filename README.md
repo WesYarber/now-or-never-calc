@@ -1,5 +1,5 @@
 # now-or-never-calc
-A calculator for the board game Now or Never. This will show you the maximum money yield from your combination of resources.
+A calculator for the board game Now or Never. This will show you the maximum money yield from selling your combination of resources.
 
 I wrote this in Python and used ChatGPT to convert it to HTML+CSS+Javascript.
 A version of it is hosted on my website at [wesyarber.net/now-or-never-calc](https://wesyarber.net/now_or_never_calc.html)
